@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'handWriting';
+    src: url('/RetroSignature.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: 'handWriting1';
+    src: url('/HolidayFree.woff2') format('woff2'),
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM sans";
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    color: black;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+img {
+    // user-drag: none;
+    -webkit-user-drag: none;
+    /* Safari */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+    overflow: hidden;
+}
+
+.blackScreen {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 3000;
+}
+
+@mixin mobile {
+    @media (max-width : 738px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width : 1024px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width : 1366px) {
+        @content;
+    }
+}

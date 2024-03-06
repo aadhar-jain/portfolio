@@ -1,0 +1,26 @@
+@import "../../app.scss";
+
+.name {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items:end;
+    justify-content: center;
+
+    @include mobile{
+        margin: auto;
+        width: 70%;
+        height: 140px;
+    }    
+    span {
+        font-size: 130px;
+        font-family: handWriting, DM sans;
+        letter-spacing: 7px;
+        @include mobile{
+            font-size: 100px;
+            text-align: center;
+            line-height: 60px;
+            letter-spacing: 10px;
+        }    
+    }
+}

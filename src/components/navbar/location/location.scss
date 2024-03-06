@@ -1,0 +1,56 @@
+@import "../../../app.scss";
+
+$animation-duration: 25s;
+.location {
+    width: 70px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    top: -320%;
+    color: #fff;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    @include mobile{
+        top: -210%;
+        width: 50px;
+        height: 350px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        position: relative;
+        top:17%;
+        gap: 6px;
+        font-weight: bold;
+        @include mobile{
+            font-size: 10px;
+        }
+    }
+
+    img {
+        position: absolute;
+        bottom: 4%;
+        width: 45px;
+        animation: rotateEarth $animation-duration linear infinite;
+        @include mobile{
+            width: 30px;
+        }
+    }
+
+    @keyframes rotateEarth {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}

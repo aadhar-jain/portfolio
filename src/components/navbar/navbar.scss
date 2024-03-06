@@ -1,0 +1,26 @@
+@import "../../app.scss";
+
+.navbar{
+    height: 70px;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    gap: 650px;
+    justify-content: space-around;
+    @include mobile{
+        gap: 60px;
+        justify-content: center;
+    }
+    .menu{
+        height: inherit;
+        display: flex;
+        align-items :end;
+        gap: 40px;
+        @include mobile{
+            gap: 15px;
+        }
+        a{
+            padding: 10px;
+        }
+    }
+}

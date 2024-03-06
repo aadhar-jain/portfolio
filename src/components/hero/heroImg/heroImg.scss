@@ -1,0 +1,39 @@
+@import "../../../app.scss";
+
+.heroImg {
+    width: 33.33%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -5%;
+   
+    @include mobile{
+        top: 0;
+        width: 100%;
+    }
+
+    .container {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 400px;
+        border-radius: 200px;
+
+        @include mobile{
+        }
+    }
+
+    img {
+        max-width: 130%;
+        position: absolute;
+        top: 6%;
+        @include mobile{
+
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "../../app.scss";
+
+.hero{
+    display: flex;
+    position: relative;
+    height: 390px;
+    max-width: 1366px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    @include mobile{
+        height: 600px;
+        flex-direction: column;
+        top: 5%;
+    }
+}

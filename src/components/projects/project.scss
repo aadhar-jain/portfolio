@@ -1,0 +1,128 @@
+@import "../../app.scss";
+
+.portfolio {
+    position: relative;
+    background-color: black;
+
+    .portfolio {
+        overflow: hidden;
+    }
+
+    .progress {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        padding-top: 30px;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        z-index: 20;
+
+        @include mobile {
+            font-size: 14px;
+        }
+
+        .progressBar {
+            height: 10px;
+            background-color: rgb(230, 138, 0);
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        .wrapper {
+            max-width: 80%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: inherit;
+            gap: 50px;
+
+            @include mobile {
+                flex-direction: column;
+                gap: 150px;
+            }
+
+            .imgWrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                height: 300px;
+                width: 100%;
+
+                @include mobile {
+                    top: 15%;
+                    height: 50%;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+
+                .phoneScreen {
+                    height: 90%;
+                    object-fit: contain;
+                    filter: drop-shadow(0 10px 20px rgba(29, 26, 26, 0.307)) drop-shadow(0 6px 6px rgba(100, 100, 100, 0.52));
+
+                    @include mobile {
+                        height: 40%;
+                    }
+                }
+
+                .macScreen {
+                    width: 500px;
+                    filter: drop-shadow(0 10px 20px rgba(74, 72, 72, 0.1)) drop-shadow(0 6px 6px rgba(168, 165, 165, 0.43));
+
+                    @include mobile {
+                        width: 350px;
+
+                    }
+                }
+            }
+
+            .textContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                position: relative;
+                @include mobile {
+                    top: 2%;
+                }
+                h2 {
+                    font-size: 60px;
+                    color: rgb(230, 138, 0);
+                    position: relative;
+                    
+                }
+
+                p {
+                    color: whitesmoke;
+                    font-size: 15px;
+                }
+
+                button {
+                    border: none;
+                    padding: 10px;
+                    border-radius: 10px;
+                    width: 200px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    background-color: rgb(230, 138, 0);
+
+                    img {
+                        width: 8px;
+                        position: relative;
+                        left: -10%;
+                    }
+                }
+            }
+        }
+    }
+}
