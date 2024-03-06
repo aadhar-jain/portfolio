@@ -16,7 +16,7 @@ const HeroText = ({showDelay}) => {
                 <span>I write</span>
                 <span className='code' >Code</span>
             </div>
-            <img src="/upArrow.png" alt="" />
+            <img src="./upArrow.png" alt="" />
         </motion.div>
     )
 }

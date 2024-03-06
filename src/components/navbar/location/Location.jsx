@@ -18,7 +18,7 @@ const Location = ({showDelay}) => {
         <li>I</li>
         <li>A</li>
       </ul>
-      <img src="/earth.png" alt="" />
+      <img src="./earth.png" alt="" />
     </motion.div>
   )
 }

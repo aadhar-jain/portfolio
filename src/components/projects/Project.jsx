@@ -7,8 +7,8 @@ const items = [
         id: 1,
         title: "ChatPal",
         desc: "Encryption-Decryption web application to ensure secure communication. Incorporates characters from over 161 modern and historical scripts. Retains the original text formatting during decryption process",
-        phoneImg: "/chatpalPhone.png",
-        macImg: "/chatpalMac.png",
+        phoneImg: "./chatpalPhone.png",
+        macImg: "./chatpalMac.png",
         url: "https://aadhar-jain.github.io/ChatPalWeb/",
     },
     {
@@ -16,15 +16,15 @@ const items = [
         title: "CHESS CPP",
         desc: " Multiplayer chess game that uses CLI. Uses an engaging retro theme, offering a unique and visually nostalgic playing environment",
         phoneImg: "",
-        macImg: "/chessMac.png",
+        macImg: "./chessMac.png",
         url: "https://github.com/aadhar-jain/CHESS-CPP",
     },
     {
         id: 3,
         title: "Evidence",
         desc: "An E-learning platform, to cater to students from Class 1 to 12th and competitive preparation. Vibrant UI components to create an engaging experience for stressed-out students",
-        phoneImg: "/evidencePhone.png",
-        macImg: "/evidenceMac.png",
+        phoneImg: "./evidencePhone.png",
+        macImg: "./evidenceMac.png",
         url: "https://aadhar-jain.github.io/Evidence/",
     },
 ]
@@ -57,7 +57,7 @@ const Single = ({ item }) => {
                     <motion.div className="textContainer" style={{ y: textY }}>
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button><img src="/right-up.png" alt="" />
+                        <button><img src="./right-up.png" alt="" />
                             <a href={item.url}>Try {item.title}</a></button>
                     </motion.div>
                 </div>
